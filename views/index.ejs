@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="My portfolio, list of projects">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,  user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="My portfolio, list of projects" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
     <title>Lucas Hideki</title>
-    <link rel="stylesheet" href="../static/css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="static/css/style.css" />
+  </head>
+  <body>
     <header>
-
+      <nav>
+        <ul class="ul ul--type-nav">
+          <li class="li li--type-nav">
+            <a class="a a--type-nav" href="">Contact</a>
+          </li>
+          <li class="li li--type-nav">
+            <a class="a a--type-nav" href="">Projects</a>
+          </li>
+          <li class="li li--type-nav">
+            <a class="a a--type-nav" href="">Home</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-</body>
+    <div
+      class="div div--type-container div--display-flex div--flex-justify_center"
+    >
+      <%- include("home") %>
+    </div>
+  </body>
 </html>
