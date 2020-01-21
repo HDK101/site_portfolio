@@ -1,1 +1,5 @@
+#Modules folder
 /node_modules/
+
+#Build folder
+/build/
