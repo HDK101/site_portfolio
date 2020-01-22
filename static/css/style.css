@@ -73,7 +73,7 @@ _A_
   transition: color 1s;
 }
 .a__profiles:hover {
-  color: rgb(255, 255, 255)
+  color: rgb(255, 255, 255);
 }
 
 /*
@@ -87,39 +87,25 @@ _DIV_
   border-radius: 20px 5px 20px 5px;
   box-shadow: 5px 5px 20px rgba(18, 3, 20, 0.568),
     -5px -5px 20px rgba(149, 29, 165, 0.349);
-    color: rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
 }
 .div__intro {
   flex-direction: column;
 }
-
 .div--white {
   background-color: white;
 }
 .div--purple {
   background: linear-gradient(145deg, #3a175a, #100035);
 }
-
 .div__information {
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  padding-top: 90px;
   align-items: center;
-  max-height: 210px;
-  min-height: 210px;
   width: 100%;
   border-radius: 5px;
   margin: 30px;
-  /* background-color: white; */
-  color: rgba(255, 255, 255, 0);
-  transition: max-height 1s, min-height 1s, padding-top 1s, color 1s;
-}
-.div__information:hover {
-  padding-top: 10px;
-  max-height: 290px;
-  min-height: 290px;
-  color: rgba(255, 255, 255, 1);
 }
 .div__profiles {
   display: flex;
@@ -128,9 +114,7 @@ _DIV_
   width: 100%;
   border-radius: 5px;
   margin: 30px;
-  /* background-color: white; */
 }
-
 .div__container {
   display: flex;
   flex-direction: column;
@@ -140,7 +124,6 @@ _DIV_
   font-family: "Roboto Mono", monospace;
   height: auto;
 }
-
 .div__languages {
   display: flex;
   align-items: center;
@@ -181,7 +164,6 @@ _SVG_
   min-width: 320px;
   height: auto;
 }
-
 .svg--square {
   height: 100px;
   width: 100px;
@@ -222,15 +204,34 @@ _MEDIA_
     width: 200px;
     transition: background-color, 1s, width, 1s;
   }
+  .a__profiles {
+    color: rgba(255, 255, 255, 0);
+    transition: color 1s;
+  }
+  .a__profiles:hover {
+    color: rgb(255, 255, 255);
+  }
 
   .div__box {
     margin: 70px 0 20px 0;
     width: 90vw;
     max-width: 1000px;
   }
-
   .div__languages {
     flex-direction: row;
+  }
+  .div__information {
+    padding-top: 90px;
+    max-height: 210px;
+    min-height: 210px;
+    color: rgba(255, 255, 255, 0);
+    transition: max-height 1s, min-height 1s, padding-top 1s, color 1s;
+  }
+  .div__information:hover {
+    padding-top: 10px;
+    max-height: 290px;
+    min-height: 290px;
+    color: rgba(255, 255, 255, 1);
   }
 }
 
@@ -249,6 +250,10 @@ _MEDIA_
   .a__nav:hover {
     transition: background-color, 1s;
   }
+  .a__profiles {
+    color: rgba(255, 255, 255, 1);
+  }
+  
 
   .li__nav {
     width: 100%;
@@ -258,8 +263,16 @@ _MEDIA_
     margin: 50px 0 50px 0;
     width: 100vw;
   }
-
   .div__languages {
     flex-direction: column;
+  }
+  .div__information {
+    padding-top: 40px;
+    max-height: 260px;
+    min-height: 260px;
+    width: 100%;
+    border-radius: 5px;
+    margin: 30px;
+    color: rgba(255, 255, 255, 1);
   }
 }
