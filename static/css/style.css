@@ -24,6 +24,7 @@ p {
 body {
   background-color: rgb(49, 19, 77);
 }
+
 header {
   background: linear-gradient(145deg, #6d1ab9, #5f0077);
   height: auto;
@@ -32,7 +33,34 @@ header {
   width: 100%;
   box-shadow: 10px 10px 10px rgba(35, 5, 39, 0.568);
 }
-/*CLASS*/
+/*
+IDS
+*/
+#mainContainer {
+  width: 100%;
+  position: absolute;
+}
+#introContainer {
+  background-color: black;
+  height: 100vh;
+  position: relative;
+  animation: introfadein 4s 1;
+}
+
+@keyframes introfadein {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+/*
+CLASS
+*/
 
 /*
 _UL_
@@ -116,13 +144,24 @@ _DIV_
   margin: 30px;
 }
 .div__container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
   font-family: "Roboto Mono", monospace;
   height: auto;
+}
+/*
+=CONTAINER= ANIM
+*/
+@keyframes containerfade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .div__languages {
   display: flex;
@@ -196,7 +235,7 @@ _P_
 }
 
 .p__languages {
-  font-size: 24px;
+  font-size: 16px;
   text-align: center;
   margin: 20px;
 }
@@ -227,7 +266,6 @@ _MEDIA_
   .a__profiles:hover {
     color: rgb(255, 255, 255);
   }
-
   .div__box {
     margin: 70px 0 20px 0;
     width: 90vw;
@@ -269,7 +307,6 @@ _MEDIA_
   .a__profiles {
     color: rgba(255, 255, 255, 1);
   }
-  
 
   .li__nav {
     width: 100%;
