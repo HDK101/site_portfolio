@@ -151,6 +151,10 @@ _H1_
   margin: 20px;
 }
 
+.h1__aboutme {
+  font-size: 48px;
+}
+
 /*
 _SVG_
 */
@@ -185,6 +189,18 @@ _IMG_
 /*
 _P_
 */
+.p__aboutme {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px 80px 20px;
+}
+
+.p__languages {
+  font-size: 24px;
+  text-align: center;
+  margin: 20px;
+}
+
 .p__info {
   margin: 20px;
 }
